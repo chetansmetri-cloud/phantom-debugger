@@ -4,7 +4,7 @@ import requests
 from database import connect_to_vault
 
 # We will use the free Hugging Face API to access Gemma 
-HF_API_KEY = os.environ.get("HF_API_KEY", "YOUR_HUGGINGFACE_TOKEN_HERE")
+HF_API_KEY = os.environ.get("HF_API_KEY")
 GEMMA_API_URL = "https://api-inference.huggingface.co/models/google/gemma-2b-it"
 
 def ask_gemma(prompt):
